@@ -8,7 +8,9 @@ module.exports = {
 
   // Output config - The directory where the compiled file needs to placed.
   // The path is absolute. so use path module.
+  // 'publicPath' is to enable live reload of webpack dev server
   output: {
+    publicPath: "public",
     filename: "bundle.js",
     path: path.resolve(__dirname, "public"),
   },
