@@ -2,6 +2,7 @@ const path = require("path");
 
 // Webpack needs to export a config using nodejs modules bz node system reads and executes it.
 module.exports = {
+  devtool: "eval-source-map",
   //entry file and webpack automatically compiles the ts files in dependency tree of index.ts.
   // The path specified should be relative.
   entry: "./src/index.ts",
