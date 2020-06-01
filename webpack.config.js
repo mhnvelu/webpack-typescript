@@ -27,4 +27,10 @@ module.exports = {
       },
     ],
   },
+
+  //Tells what extensions we want webpack to be able to resolve.
+  // So, when we import ts or js files, webpack knows how to resolves those files.
+  resolve: {
+    extensions: [".ts", ".js"],
+  },
 };
